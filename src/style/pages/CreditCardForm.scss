@@ -1,0 +1,39 @@
+.credit-card-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    .form-control {
+      max-width: 400px;
+      margin: 5px;
+      input {
+        // width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        margin: 5px;
+      }
+    }
+  
+    .confirm-btn {
+      width: 50%;
+      padding: 10px;
+      margin: 5px;
+
+      background-color: #3c3c3d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #1c1d1d;
+      }
+    }
+  }
+  

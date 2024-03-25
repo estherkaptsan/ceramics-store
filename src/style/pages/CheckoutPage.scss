@@ -1,0 +1,38 @@
+.checkout-page {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.cart-in-checkout {
+  flex: 1;
+  margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.checkout-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.shiping-in-checkout {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+}

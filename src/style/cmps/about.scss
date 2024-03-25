@@ -1,0 +1,16 @@
+.about {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .about-img {
+        max-height: 500px;
+    }
+    p {
+        max-width: 500px;
+        color: #6d6e71;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 2.25rem;
+    }
+}

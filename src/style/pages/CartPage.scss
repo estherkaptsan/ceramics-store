@@ -1,0 +1,29 @@
+.cart-page {
+    .cart-items {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .cart-item {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+    .checkout-link {
+        display: flex;
+        gap: 20px;
+        background-color: #747171;
+        padding: 10px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+}

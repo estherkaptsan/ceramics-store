@@ -1,0 +1,14 @@
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .t-shirt {
+        border: 1px solid #7f7d7d;
+        width: auto;
+
+        img {
+            width: 200px;
+        }
+    }
+}

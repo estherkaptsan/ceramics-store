@@ -1,0 +1,74 @@
+.item-preview {
+  position: relative;
+
+  .edit-delete-buttons {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: #80808052;
+    color: #060606;
+    border-radius: 7px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover .edit-delete-buttons {
+    opacity: 1;
+  }
+
+  .edit-link {
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+  }
+
+  .sale-label,
+  .out-of-stock-label {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    background-color: rgba(254, 6, 6, 0.703);
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  .out-of-stock-label {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover img {
+    opacity: 0.8;
+  }
+
+  .title-and-price {
+    text-align: center;
+    color: rgb(39, 38, 38);
+
+ 
+  }
+}

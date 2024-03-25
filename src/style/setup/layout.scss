@@ -1,0 +1,25 @@
+
+.main-container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    >* {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
+
+    // @include for-narrow-layout {
+    //     grid-template-columns: minmax($paddingLayout, 1fr) minmax(auto, $narrow-breakpoint) minmax($paddingLayout, 1fr);
+    // }
+
+    // @include for-normal-layout {
+    //     grid-template-columns: minmax($paddingLayout, 1fr) minmax(auto, $normal-breakpoint) minmax($paddingLayout, 1fr);
+    // }
+
+    // @include for-wide-layout {
+    //     grid-template-columns: minmax($paddingLayout, 1fr) minmax(auto, $wide-breakpoint) minmax($paddingLayout, 1fr);
+    // }
+}

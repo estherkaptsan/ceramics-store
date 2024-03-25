@@ -1,0 +1,28 @@
+// setup:
+@import 'setup/variables.scss';
+@import 'setup/helpers.scss';
+@import 'setup/functions.scss';
+@import 'setup/layout.scss';
+
+// pages:
+@import 'pages/HomePage.scss';
+@import 'pages/CartPage.scss';
+@import 'pages/PaymentPage.scss';
+@import 'pages/CheckoutPage.scss';
+@import 'pages/CreditCardForm.scss';
+@import 'pages/LoginForm.scss';
+@import 'pages/Sale.scss';
+
+// cmps:
+@import 'cmps/appHeader.scss';
+@import 'cmps/footer.scss';
+@import 'cmps/about.scss';
+@import 'cmps/itemExplore.scss';
+@import 'cmps/itemList.scss';
+@import 'cmps/itemDetails.scss';
+@import 'cmps/itemPreview.scss';
+@import 'cmps/orderPreview.scss';
+@import 'cmps/itemEdit.scss';
+@import 'cmps/shiping.scss';
+@import 'cmps/whatsapp.scss';
+@import 'cmps/contact.scss';
