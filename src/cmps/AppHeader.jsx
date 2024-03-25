@@ -16,15 +16,6 @@ export default function AppHeader() {
         setShowMenu(!showMenu);
     };
 
-    // if (loggedInUser) {
-    //     loggedInUser.then(user => {
-    //         if (user.isAdmin) setIsAdmin(true)
-    //         else setIsAdmin(false)
-    //     }).catch(error => {
-    //         console.error('Error fetching logged-in user:', error);
-    //     });
-    // }
-
     if (!cartItems) return <div>Loading data...</div>
     return (
         <nav className='app-header'>
