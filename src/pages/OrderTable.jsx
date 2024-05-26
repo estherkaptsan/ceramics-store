@@ -2,6 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadOrders, removeOrder, updateOrder } from '../store/actions/order.action';
 import OrderList from '../cmps/OrderList';
+import SummaryOfOrders from '../cmps/SummaryOfOrders';
 
 export default function OrderTable() {
     const orders = useSelector((storeState) => storeState.orderModule.orders);
@@ -11,7 +12,6 @@ export default function OrderTable() {
         const loadAllOrders = async () => {
             await dispatch(loadOrders());
         };
-
         loadAllOrders();
     }, [dispatch]);
 
@@ -30,11 +30,11 @@ export default function OrderTable() {
             console.log('error:', error)
         }
     }, [])
-
     if (!orders) return <div>Loading data....</div>
 
     return (
         <div className='order-table'>
+            <SummaryOfOrders orders={orders}/>
             <OrderList orders={orders}
                 onRemoveOrder={onRemoveOrder}
                 onApproveOrder={onApproveOrder} />

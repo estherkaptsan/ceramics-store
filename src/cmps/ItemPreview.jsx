@@ -19,8 +19,7 @@ export default function ItemPreview({ item, onRemoveItem }) {
           </Link>
           <button
             className="delete-button"
-            onClick={() => onRemoveItem(item._id)}
-          >
+            onClick={() => onRemoveItem(item._id)}>
             <FontAwesomeIcon className='icon-delete' icon={faTrashAlt} />
           </button>
         </div>

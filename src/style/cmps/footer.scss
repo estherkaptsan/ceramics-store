@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 30px;
   padding: 20px;
   color: white;
   background-color: rgb(16, 16, 16);
@@ -36,6 +35,21 @@
     a,
     .instagram {
       color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .footer {
+    flex-direction: column-reverse;
+
+    p {
+      margin: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: row;
     }
   }
 }

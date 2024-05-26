@@ -1,0 +1,30 @@
+.summary-of-orders {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    .orders,
+    .pending,
+    .approved {
+        padding: 20px;
+        margin-bottom: 5px;
+        border: 1px solid #dedbdb;
+        border-radius: 5px;
+        box-shadow: 1px 1px #e9e5e5;
+        font-weight: bold;
+    }
+
+    .orders {
+        color: #ffbe5b;
+    }
+
+    .pending {
+        color: #c43333;
+    }
+
+    .approved {
+        color: #1dbf73;
+    }
+}

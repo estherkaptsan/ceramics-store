@@ -1,33 +1,33 @@
-// OrderPreview.scss
-
 .order-preview {
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-  
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-  
-    th {
-      background-color: #f2f2f2;
-    }
-  
-    button {
-      background-color: #f44336;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-  
-    button:hover {
-      background-color: #d32f2f;
-    }
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  p {
+    margin: 0;
   }
-  
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 5px;
+  }
+
+  button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: #d32f2f;
+  }
+}
+
+.order-preview:nth-child(even) {
+  background-color: #f3f3f3;
+}

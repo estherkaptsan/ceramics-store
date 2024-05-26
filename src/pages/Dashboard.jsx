@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <div>
       <section>
-        <h3>orders</h3>
+        <h3>orders data</h3>
         <OrderTable  />
       </section>
     </div>

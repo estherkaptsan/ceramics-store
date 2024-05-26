@@ -1,13 +1,12 @@
 .home-page {
-
     .hero-container {
         object-fit: cover;
         min-height: 70vh;
-        min-width: 100%;
+        max-width: 1400px;
         background-size: cover;
         background-repeat: no-repeat;
         transition: all 1s ease 0s;
-        margin-top: 50px;
+        margin: 30px auto;
     }
 
     .shop-categories {
@@ -15,15 +14,17 @@
     }
 
     .categories {
+        margin: auto;
         margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: space-evenly;
+        max-width: 1400px;
 
         .category {
             font-size: large;
-            color: black;
+            color: #181818;
             text-align: center;
 
             p {
@@ -39,22 +40,34 @@
             }
 
             img {
-                width: 500px;
-                height: 502px;
+                width: 600px;
+                height: 602px;
             }
         }
     }
+}
 
-    @media screen and (max-width: 720px) {
-        .category {
-            // font-size: large;
-            // text-align: center;
-            // color: red;
+@media screen and (max-width: 1290px) {
 
-            img.category-img {
-                width: 340px;
-                height: 342px;
-            }
+    .home-page .categories {
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+        max-width: 990px;
+
+        .category img {
+            width: 440px;
+            height: 442px;
         }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .home-page .category img.category-img {
+        width: 340px;
+        height: 342px;
     }
 }

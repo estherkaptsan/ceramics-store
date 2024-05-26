@@ -1,68 +1,3 @@
-// .item-details {
-//     display: flex;
-
-//     .left-details {
-//         flex: 1;
-//         padding: 10px;
-//     }
-
-//     .right-details {
-//         flex: 1;
-//         padding: 10px;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: flex-start;
-
-
-//         p {
-//             text-align: left;
-//             max-width: 400px;
-//         }
-
-//         .sale-price {
-//             font-size: 20px;
-
-//             span {
-//                 font-size: 15px;
-//             }
-
-//         }
-//     }
-
-//     .add-to-cart {
-//         margin-top: 10px;
-//         padding: 10px;
-//         color: #323030;
-//         border: none;
-//         cursor: pointer;
-//     }
-
-//     .delete-button {
-//         margin-top: 10px;
-//         padding: 10px;
-//         color: #323030;
-//         border: none;
-//         cursor: pointer;
-//         display: flex;
-//         align-items: center;
-//     }
-
-//     .next-prev-buttons {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-
-//     .out-of-stock {
-//         color: red;
-//         font-weight: bold;
-//     }
-
-//     .sale-price {
-//         color: green;
-//     }
-// }
-
 .item-details {
 
     display: flex;
@@ -100,7 +35,7 @@
                 font-size: 15px;
             }
 
-            color: green; // Apply green color directly to sale price
+            color: green;
         }
 
         .add-to-cart {
@@ -109,8 +44,8 @@
             color: #fcf8f8;
             border: none;
             cursor: pointer;
-            background-color: #312f2f; // Adding a background color for better visibility
-            width: 100%; // Take full width on mobile
+            background-color: #312f2f;
+            width: 100%;
         }
 
         .out-of-stock {
@@ -123,11 +58,11 @@
         flex-direction: column;
 
         .left-details {
-            order: 1; 
+            order: 1;
         }
 
         .right-details {
-            order: 2;  
+            order: 2;
         }
     }
 }

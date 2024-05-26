@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { itemService } from '../services/item.service'
-import { loadItems, addOrder, loadCategories, setFilterBy } from '../store/actions/item.actions'
+import { loadItems, addOrder, setFilterBy } from '../store/actions/item.actions'
 import ImgUploader from '../cmps/ImgUploader';
 
 export default function ItemEdit() {

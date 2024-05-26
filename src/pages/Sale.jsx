@@ -20,19 +20,17 @@ export default function Sale() {
     }, [dispatch, filterByCategory]);
 
     const filteredSaleItems = items.filter(item => item.inSale);
-    
+
     if (!filteredSaleItems) return <div>Loading data...</div>
 
     return (
-        <div>
-            <div className='sale-items'>
-                <p className='sale-title'>SALE</p>
-                {filteredSaleItems.map((item, index) => (
-                    <ItemList
-                        item={item}
-                        key={`${item._id}-${index}`} />
-                ))}
-            </div>
+        <div className='sale-items'>
+            {/* <p className='sale-title'>SALE</p> */}
+            {filteredSaleItems.map((item, index) => (
+                <ItemList
+                    item={item}
+                    key={`${item._id}-${index}`} />
+            ))}
         </div>
     )
 }
